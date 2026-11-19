@@ -1,0 +1,87 @@
+/* ============================================================
+   FRANJA "ABIERTO AHORA" — ocupa el espacio de [data-super-ofertas]
+   La hora real de Antofagasta, la dirección y tres ocasiones que
+   abren WhatsApp con el mensaje escrito.
+   ============================================================ */
+.so-section {
+    background: var(--foam, #F5F8FB);
+    padding: clamp(48px, 6vw, 88px) 0;
+}
+.so-section .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 var(--m, 24px);
+}
+.so-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(24px, 4vw, 64px);
+    align-items: end;
+    color: var(--ink, #0F2E4C);
+    font-family: var(--font, system-ui, sans-serif);
+}
+.so-title {
+    font-size: var(--t-l, clamp(26px, 3vw, 46px));
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+    font-stretch: 90%;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 0 0 0.9rem;
+    color: var(--ink, #0F2E4C);
+}
+.so-hora {
+    font-variant-numeric: tabular-nums;
+    color: var(--field, #12476E);
+    transition: color 1.6s ease;
+}
+.so-sub {
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 52ch;
+    color: var(--ink, #0F2E4C);
+    margin: 0;
+}
+.so-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+}
+.so-ocasion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 1.25rem;
+    flex: 1 1 auto;
+    background: var(--sky, #CFDFEE);
+    color: var(--ink, #0F2E4C);
+    font-weight: 650;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms, transform 160ms;
+}
+.so-ocasion:hover { background: var(--sun, #F6A65B); color: var(--on-sun, #0F2E4C); }
+.so-ocasion:active { transform: scale(0.97); }
+.so-cta {
+    flex: 1 0 100%;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 4px;
+    color: var(--ink, #0F2E4C);
+    font-weight: 650;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+.so-cta:hover { text-decoration-color: var(--sun, #F6A65B); }
+
+@media (max-width: 860px) {
+    .so-banner { grid-template-columns: 1fr; align-items: start; }
+    .so-title, .so-sub { max-width: none; }
+    .so-title { font-size: clamp(24px, 6.6vw, 34px); }
+}
