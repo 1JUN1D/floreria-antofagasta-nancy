@@ -27,7 +27,7 @@
   }
 </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="23 arreglos de Florería Afrodita con precio: ramos de rosas, girasoles, regalos y arreglos fúnebres. Despacho a domicilio en Antofagasta y pedidos las 24 horas.">
+    <meta name="description" content="23 arreglos y 57 peluches de Florería Afrodita con precio: ramos de rosas, girasoles, regalos y arreglos fúnebres. Despacho a domicilio en Antofagasta y pedidos las 24 horas.">
     <meta name="keywords" content="floristeria antofagasta, catalogo flores, arreglos florales antofagasta, rosas, girasoles, gerberas, ramos, canastas florales, arreglos funebres, flores a domicilio antofagasta">
     <title>Catálogo de flores con precios en Antofagasta | Florería Afrodita</title>
 
@@ -76,7 +76,7 @@
     <section class="catalog-hero">
         <div class="container">
             <h1>Catálogo Floral Antofagasta</h1>
-            <p>23 arreglos con su precio: ramos, regalos y arreglos fúnebres, con despacho a domicilio en Antofagasta y pedidos las 24&nbsp;horas.</p>
+            <p>23 arreglos y 57 peluches con su precio: ramos, regalos y arreglos fúnebres, con despacho a domicilio en Antofagasta y pedidos las 24&nbsp;horas.</p>
         </div>
     </section>
 
@@ -92,7 +92,7 @@
         <div class="container">
             <!-- Search Bar -->
             <div class="search-container">
-                <input type="search" class="search-input" id="search-input" aria-label="Buscar arreglos" placeholder="Buscar por nombre, código (001, 002...), rosas, girasoles...">
+                <input type="search" class="search-input" id="search-input" aria-label="Buscar arreglos" placeholder="Buscar por nombre, código (001, P01...), rosas, peluches...">
                 <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"/>
                     <path d="m21 21-4.35-4.35"/>
@@ -106,6 +106,7 @@
                 <button class="filter-btn" data-filter="rosas" data-code="820"><span class="filter-code">[820]</span> Rosas</button>
                 <button class="filter-btn" data-filter="girasoles" data-code="810"><span class="filter-code">[810]</span> Girasoles</button>
                 <button class="filter-btn" data-filter="funebres" data-code="500"><span class="filter-code">[500]</span> Fúnebres</button>
+                <button class="filter-btn" data-filter="peluches" data-code="600"><span class="filter-code">[600]</span> Peluches</button>
                 <button class="filter-btn" data-filter="premium" data-code="700"><span class="filter-code">[700]</span> Premium</button>
                 <button class="filter-btn" data-filter="precio-bajo" data-code="900"><span class="filter-code">[900]</span> Hasta $30.000</button>
                 <button class="filter-btn" data-filter="precio-medio" data-code="910"><span class="filter-code">[910]</span> $30.000 - $80.000</button>
@@ -469,7 +470,65 @@ const allProducts = [
                 "funebres",
                 "precio-alto"
         ]
-    }
+    },
+    // Peluches (fotos assets/peluche_N; no hay 22 ni 27)
+    {"id": 101, "code": "P01", "name": "Peluche azul con patito", "price": 70000, "image": "assets/peluche_1-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 102, "code": "P02", "name": "Oso blanco con arcoíris", "price": 70000, "image": "assets/peluche_2-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 103, "code": "P03", "name": "León de peluche", "price": 50000, "image": "assets/peluche_3-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 104, "code": "P04", "name": "Oso café con bolso", "price": 15000, "image": "assets/peluche_4-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 105, "code": "P05", "name": "Oso gris con cupcake", "price": 70000, "image": "assets/peluche_5-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 106, "code": "P06", "name": "Conejita negra con vestido floreado", "price": 30000, "image": "assets/peluche_6-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 107, "code": "P07", "name": "Conejita rosada con vestido floreado", "price": 30000, "image": "assets/peluche_7-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 108, "code": "P08", "name": "Peluche rosado con llave de corazón", "price": 30000, "image": "assets/peluche_8-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 109, "code": "P09", "name": "Conejita rosada con girasol", "price": 30000, "image": "assets/peluche_9-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 110, "code": "P10", "name": "Muñeca lila con capucha", "price": 30000, "image": "assets/peluche_10-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 111, "code": "P11", "name": "Oso blanco con flor", "price": 70000, "image": "assets/peluche_11-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 112, "code": "P12", "name": "Gatita blanca con vestido celeste", "price": 30000, "image": "assets/peluche_12-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 113, "code": "P13", "name": "Gatita blanca con hamburguesa", "price": 30000, "image": "assets/peluche_13-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 114, "code": "P14", "name": "Osito rosado", "price": 8000, "image": "assets/peluche_14-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 115, "code": "P15", "name": "Cerdita con vestido celeste", "price": 10000, "image": "assets/peluche_15-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 116, "code": "P16", "name": "Oso blanco con corazón Te amo", "price": 15000, "image": "assets/peluche_16-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 117, "code": "P17", "name": "Gato negro gruñón", "price": 15000, "image": "assets/peluche_17-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 118, "code": "P18", "name": "Gatita blanca con corazón Love", "price": 15000, "image": "assets/peluche_18-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 119, "code": "P19", "name": "Osito naranjo con moño escocés", "price": 15000, "image": "assets/peluche_19-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 120, "code": "P20", "name": "Osa rosada con corazón Te amo", "price": 15000, "image": "assets/peluche_20-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 121, "code": "P21", "name": "Oso con sombrero y corazón Te amo", "price": 15000, "image": "assets/peluche_21-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 123, "code": "P23", "name": "Gatita blanca con vestido rosado", "price": 30000, "image": "assets/peluche_23-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 124, "code": "P24", "name": "Peluche azul con muñequita", "price": 30000, "image": "assets/peluche_24-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 125, "code": "P25", "name": "Oso blanco de pie", "price": 30000, "image": "assets/peluche_25-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 126, "code": "P26", "name": "Pollito amarillo con globo", "price": 15000, "image": "assets/peluche_26-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 128, "code": "P28", "name": "Oso café rizado con corbatín", "price": 45000, "image": "assets/peluche_28-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 129, "code": "P29", "name": "Gatita blanca con traje azul marino", "price": 30000, "image": "assets/peluche_29-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 130, "code": "P30", "name": "Gatita blanca con vestido cuadrillé", "price": 30000, "image": "assets/peluche_30-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 131, "code": "P31", "name": "Perrito blanco de orejas largas con corazón", "price": 15000, "image": "assets/peluche_31-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 132, "code": "P32", "name": "Gatita blanca tornasol", "price": 30000, "image": "assets/peluche_32-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 133, "code": "P33", "name": "Unicornio celeste", "price": 20000, "image": "assets/peluche_33-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 134, "code": "P34", "name": "Osito miel con cinta", "price": 8000, "image": "assets/peluche_34-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 135, "code": "P35", "name": "Osito café con corazón Te amo", "price": 8000, "image": "assets/peluche_35-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 136, "code": "P36", "name": "Osito blanco I love you", "price": 8000, "image": "assets/peluche_36-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 137, "code": "P37", "name": "Conejita lila con tutú", "price": 15000, "image": "assets/peluche_37-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 138, "code": "P38", "name": "Conejita rosada con tutú", "price": 15000, "image": "assets/peluche_38-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 139, "code": "P39", "name": "Gatita blanca con tutú negro", "price": 30000, "image": "assets/peluche_39-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 140, "code": "P40", "name": "Oso rosado con frutilla", "price": 35000, "image": "assets/peluche_40-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 141, "code": "P41", "name": "Gatita blanca con tutú lila", "price": 35000, "image": "assets/peluche_41-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 142, "code": "P42", "name": "Pollito con flor", "price": 10000, "image": "assets/peluche_42-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 143, "code": "P43", "name": "Oso café con corazón Te amo", "price": 10000, "image": "assets/peluche_43-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 144, "code": "P44", "name": "Oso blanco con boina y corazón", "price": 10000, "image": "assets/peluche_44-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 145, "code": "P45", "name": "Cerdito con chaleco", "price": 10000, "image": "assets/peluche_45-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 146, "code": "P46", "name": "Muñeca de trapo con sombrero", "price": 10000, "image": "assets/peluche_46-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 147, "code": "P47", "name": "Dinosaurio verde", "price": 10000, "image": "assets/peluche_47-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 148, "code": "P48", "name": "Vaquita", "price": 10000, "image": "assets/peluche_48-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 149, "code": "P49", "name": "Oso miel con corazón Te amo", "price": 10000, "image": "assets/peluche_49-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 150, "code": "P50", "name": "Peluche rosado con boina", "price": 30000, "image": "assets/peluche_50-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 151, "code": "P51", "name": "Peluche azul con hamburguesa", "price": 30000, "image": "assets/peluche_51-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 152, "code": "P52", "name": "Gatita blanca con vestido rojo cuadrillé", "price": 30000, "image": "assets/peluche_52-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 153, "code": "P53", "name": "Osa rosada con corazón y moño", "price": 30000, "image": "assets/peluche_53-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 154, "code": "P54", "name": "Dinosaurio rosado con frutilla", "price": 20000, "image": "assets/peluche_54-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 155, "code": "P55", "name": "Oso rosado con pastel", "price": 35000, "image": "assets/peluche_55-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-medio"], "peluche": true},
+    {"id": 156, "code": "P56", "name": "Oso crema con boina y corazón Te amo", "price": 30000, "image": "assets/peluche_56-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 157, "code": "P57", "name": "Conejita rosada con vestido satinado", "price": 20000, "image": "assets/peluche_57-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 158, "code": "P58", "name": "Oso café clásico", "price": 20000, "image": "assets/peluche_58-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true},
+    {"id": 159, "code": "P59", "name": "Conejita negra con corazón", "price": 30000, "image": "assets/peluche_59-600.webp", "description": "Para regalar solo o junto a un ramo.", "categories": ["peluches", "precio-bajo"], "peluche": true}
 ];
 
 // Solo los productos de la Súper Oferta (los demás quedan ocultos)
@@ -772,11 +831,13 @@ function showFunebreFlyer() {
                 const lightboxHandler = hasVariations
                     ? `openCarouselLightbox('${product.code}', '${product.name.replace(/'/g, "\\'")}', '${formatPrice(product.price)}')`
                     : `openLightbox('${product.image}', '${product.name.replace(/'/g, "\\'")}', '${formatPrice(product.price)}')`;
-                return `${idx === semanaProducts.length ? funebreBanner : ''}
+                const pelucheTitle = (product.peluche && (idx === 0 || !filteredProducts[idx - 1].peluche))
+                    ? '<h2 class="catalog-group-title" id="peluches">Peluches para regalar</h2><p class="catalog-group-sub">Pídelos solos o junto a un ramo. Te confirmamos disponibilidad por WhatsApp y los despachamos en Antofagasta.</p>' : '';
+                return `${idx === semanaProducts.length ? funebreBanner : ''}${pelucheTitle}
                 <div class="product-card ${product.semana ? 'semana-card' : (product.peluche ? 'peluche-card' : (product.funebrePromo ? 'funebre-promo-card' : (product.promo ? 'promo-card' : '')))}" data-categories="${product.categories.join(' ')}" data-code="${product.code}">
                     ${semanaCardOverlay(product)}
                     ${funebreCardOverlay(product)}
-                    ${product.peluche ? `<div class="peluche-ribbon">PELUCHE</div>` : ''}
+                    
                     ${product.promo && !product.semana ? `
                         <div class="promo-ribbon">
                             <span class="promo-spark"></span> SÚPER OFERTA <span class="promo-spark"></span>
@@ -802,23 +863,18 @@ function showFunebreFlyer() {
                         <div class="product-description">${product.description}</div>
                         <div class="product-footer">
                             <div>
-                                ${product.peluche ? `
-                                    <span class="peluche-note">Precio a consultar</span>
-                                    <span class="peluche-quote">Cotizar peluche</span>
-                                ` : `
-                                    <span class="price-label">Precio</span>
+                                <span class="price-label">Precio</span>
                                     ${product.originalPrice ? `<div class="original-price">${formatPrice(product.originalPrice)}</div>` : ''}
                                     <div class="product-price">${formatPrice(product.price)}</div>
-                                `}
                             </div>
-                            <a href="${product.peluche ? `https://wa.me/56950163949?text=${encodeURIComponent('Hola, quiero cotizar el peluche ' + product.code + ': ' + product.name)}` : `https://wa.me/56950163949?text=Hola,%20me%20interesa%20el%20producto%20${product.code}:%20${encodeURIComponent(product.name)}%20-%20${formatPrice(product.price)}`}"
+                            <a href="https://wa.me/56950163949?text=${encodeURIComponent('Hola, me interesa ' + (product.peluche ? 'el peluche ' : 'el producto ') + product.code + ': ' + product.name + ' - ' + formatPrice(product.price))}"
                                class="btn-order"
                                target="_blank" rel="noopener"
                                onclick="gtag_report_conversion();">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                                 </svg>
-                                ${product.peluche ? 'Cotizar' : 'Pedir por WhatsApp'}
+                                Pedir por WhatsApp
                             </a>
                         </div>
                     </div>

@@ -405,18 +405,21 @@ function initLandingCarousels() {
 // --- FUNCIONES DE WHATSAPP CON GOOGLE ADS CONVERSION ---
 function contactWA() {
     const url = 'https://wa.me/56950163949?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
+    afroditaConversion();
+    window.open(url, '_blank');
+}
+
+// Registra la conversión de Google Ads sin esperar respuesta: WhatsApp se abre
+// siempre, aunque la etiqueta no cargue o un bloqueador la impida.
+function afroditaConversion() {
     try {
         gtag('event', 'conversion', {
-            'send_to': 'AW-18565860555/ShSRCOHTnrUdEMuZ8pRF',
+            'send_to': 'AW-18558557619/rUFFCIeA5bwdELO7tJFF',
             'value': 1.0,
             'currency': 'CLP',
-            'event_callback': function () {
-                window.open(url, '_blank');
-            }
+            'transport_type': 'beacon'
         });
-    } catch (e) {
-        window.open(url, '_blank');
-    }
+    } catch (e) {}
 }
 
 function orderWA(productName, price, code) {
@@ -427,18 +430,8 @@ function orderWA(productName, price, code) {
         : `Hola, me interesa ${prefix}${productName} (${formatCLP(value)}). ¿Podrías darme más información?`;
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/56950163949?text=${encodedMessage}`;
-    try {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18565860555/ShSRCOHTnrUdEMuZ8pRF',
-            'value': 1.0,
-            'currency': 'CLP',
-            'event_callback': function () {
-                window.open(url, '_blank');
-            }
-        });
-    } catch (e) {
-        window.open(url, '_blank');
-    }
+    afroditaConversion();
+    window.open(url, '_blank');
 }
 
 // --- FILTRADO DE PRODUCTOS ---

@@ -41,7 +41,7 @@
 
 /* --- Búsqueda y filtros --- */
 .catalog-filters {
-    background: var(--foam);
+    background: var(--cream-white);
     padding: clamp(32px, 4vw, 56px) 0 16px;
 }
 .catalog-filters .container { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
@@ -53,7 +53,7 @@
     font: inherit;
     font-size: 17px;
     color: var(--ink);
-    background: var(--sky-2);
+    background: var(--blush-2);
     border: 2px solid transparent;
     border-radius: 0;
     outline: none;
@@ -82,13 +82,13 @@
     font-size: 16px;
     font-weight: 600;
     color: var(--ink);
-    background: var(--sky-2);
+    background: var(--blush-2);
     border: 0;
     border-radius: 0;
     cursor: pointer;
     transition: background-color var(--t-fast) var(--ease-out), color var(--t-fast);
 }
-.filter-btn:hover { background: var(--sky); }
+.filter-btn:hover { background: var(--blush); }
 .filter-btn.active { background: var(--ink); color: #fff; }
 .filter-btn:active { transform: scale(0.97); }
 
@@ -114,7 +114,7 @@
     position: relative;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    background: var(--sky);
+    background: var(--blush);
     cursor: zoom-in;
 }
 .product-card[data-categories~="funebres"] .product-image-container { background: var(--rose); }
@@ -123,7 +123,7 @@
 .zoom-icon {
     position: absolute; right: 12px; bottom: 12px;
     width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
-    background: var(--foam); color: var(--ink); border-radius: 0;
+    background: var(--cream-white); color: var(--ink); border-radius: 0;
     opacity: 0; transform: translateY(6px);
     transition: opacity var(--t-fast) var(--ease-out), transform var(--t-med) var(--ease-out);
 }
@@ -159,12 +159,12 @@
 .btn-order {
     display: inline-flex; align-items: center; gap: 8px;
     min-height: 48px; padding: 0 1rem;
-    background: var(--sun); color: var(--on-sun);
+    background: var(--gold); color: var(--on-gold);
     font-weight: 650; font-size: 16px; white-space: nowrap;
     border-radius: 0;
     transition: background-color var(--t-fast) var(--ease-out), transform var(--t-fast);
 }
-.btn-order:hover { background: var(--sun-hover); transform: none; }
+.btn-order:hover { background: var(--gold-hover); transform: none; }
 .btn-order:active { transform: scale(0.97); }
 .btn-order svg { width: 18px; height: 18px; }
 
@@ -173,22 +173,22 @@
     position: fixed; inset: 0; z-index: 2000;
     display: none; align-items: center; justify-content: center;
     padding: var(--m);
-    background: rgba(12, 34, 56, 0.86);
+    background: rgba(63, 23, 36, 0.86);
 }
 .lightbox.active { display: flex; animation: lb-in 260ms var(--ease-out); }
 @keyframes lb-in { from { opacity: 0; } to { opacity: 1; } }
 .lightbox-content {
     position: relative; width: min(92vw, 720px); max-height: 92svh;
-    background: var(--foam); display: flex; flex-direction: column;
+    background: var(--cream-white); display: flex; flex-direction: column;
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35); /* taste-skill-ignore: flota de verdad */
 }
-.lightbox-image { width: 100%; max-height: 72svh; object-fit: contain; background: var(--sky); }
+.lightbox-image { width: 100%; max-height: 72svh; object-fit: contain; background: var(--blush); }
 .lightbox-close {
     position: absolute; top: 8px; right: 8px; z-index: 2;
     width: 48px; height: 48px; border: 0; border-radius: 0;
-    background: var(--foam); color: var(--ink); font-size: 30px; line-height: 1; cursor: pointer;
+    background: var(--cream-white); color: var(--ink); font-size: 30px; line-height: 1; cursor: pointer;
 }
-.lightbox-close:hover { background: var(--sun); }
+.lightbox-close:hover { background: var(--gold); }
 .lightbox-info { padding: 16px 20px 20px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
 .lightbox-info h3 { font-size: var(--t-m); color: var(--ink); }
 .lightbox-info p { font-size: 24px; font-weight: 750; color: var(--ink); font-variant-numeric: tabular-nums; }
@@ -241,3 +241,15 @@
 .product-card:nth-child(6) { animation-delay: 300ms; }
 @keyframes pc-in { from { opacity: 0; transform: translate3d(0, 20px, 0); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .product-card { animation: none; } }
+
+/* Título de grupo dentro de la rejilla (peluches) */
+.catalog-group-title {
+    grid-column: 1 / -1;
+    font-size: var(--t-l);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-stretch: 86%;
+    color: var(--ink);
+    margin-top: clamp(32px, 4vw, 64px);
+}
+.catalog-group-sub { grid-column: 1 / -1; margin-top: -8px; max-width: 60ch; color: var(--ink); }

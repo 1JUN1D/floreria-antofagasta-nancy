@@ -4,7 +4,7 @@
    abren WhatsApp con el mensaje escrito.
    ============================================================ */
 .so-section {
-    background: var(--foam, #F5F8FB);
+    background: var(--cream-white, #FCF8F6);
     padding: clamp(48px, 6vw, 88px) 0;
 }
 .so-section .container {
@@ -18,7 +18,7 @@
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
     gap: clamp(24px, 4vw, 64px);
     align-items: end;
-    color: var(--ink, #0F2E4C);
+    color: var(--ink, #3F1724);
     font-family: var(--font, system-ui, sans-serif);
 }
 .so-title {
@@ -30,18 +30,18 @@
     text-wrap: balance;
     max-width: 22ch;
     margin: 0 0 0.9rem;
-    color: var(--ink, #0F2E4C);
+    color: var(--ink, #3F1724);
 }
 .so-hora {
     font-variant-numeric: tabular-nums;
-    color: var(--field, #12476E);
+    color: var(--field, #94485E);
     transition: color 1.6s ease;
 }
 .so-sub {
     font-size: 17px;
     line-height: 1.55;
     max-width: 52ch;
-    color: var(--ink, #0F2E4C);
+    color: var(--ink, #3F1724);
     margin: 0;
 }
 .so-acciones {
@@ -57,14 +57,14 @@
     min-height: 52px;
     padding: 0 1.25rem;
     flex: 1 1 auto;
-    background: var(--sky, #CFDFEE);
-    color: var(--ink, #0F2E4C);
+    background: var(--blush, #F2E1E5);
+    color: var(--ink, #3F1724);
     font-weight: 650;
     font-size: 17px;
     text-decoration: none;
     transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1), color 160ms, transform 160ms;
 }
-.so-ocasion:hover { background: var(--sun, #F6A65B); color: var(--on-sun, #0F2E4C); }
+.so-ocasion:hover { background: var(--gold, #D6B56E); color: var(--on-gold, #3F1724); }
 .so-ocasion:active { transform: scale(0.97); }
 .so-cta {
     flex: 1 0 100%;
@@ -72,13 +72,13 @@
     align-items: center;
     min-height: 44px;
     margin-top: 4px;
-    color: var(--ink, #0F2E4C);
+    color: var(--ink, #3F1724);
     font-weight: 650;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
 }
-.so-cta:hover { text-decoration-color: var(--sun, #F6A65B); }
+.so-cta:hover { text-decoration-color: var(--gold, #D6B56E); }
 
 @media (max-width: 860px) {
     .so-banner { grid-template-columns: 1fr; align-items: start; }

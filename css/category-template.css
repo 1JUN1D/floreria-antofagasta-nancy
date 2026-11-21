@@ -23,7 +23,7 @@
     width: 48%;
     background-size: cover;
     background-position: center;
-    background-color: var(--sky);
+    background-color: var(--blush);
     transform-origin: 60% 60%;
     animation: cat-drift 22s ease-in-out infinite alternate;
 }
@@ -52,7 +52,7 @@
 }
 
 /* --- Servicios: nombre grande a la izquierda, texto a la derecha --- */
-.services-section { background: var(--foam); padding: var(--gap-section) 0; }
+.services-section { background: var(--cream-white); padding: var(--gap-section) 0; }
 .services-section .section-header { margin-bottom: clamp(48px, 6vw, 88px); max-width: 60rem; }
 .section-title {
     font-size: var(--t-xl);
@@ -100,7 +100,7 @@
 .service-icon {
     grid-column: 1 / span 5;
     aspect-ratio: 4 / 3;
-    background: var(--sky) var(--img, none) center / cover no-repeat;
+    background: var(--blush) var(--img, none) center / cover no-repeat;
     display: block;
     width: auto; height: auto; margin: 0; border-radius: 0; padding: 0;
 }
@@ -119,7 +119,7 @@
 .feature-tag { background: none; padding: 0; border-radius: 0; font-size: 16px; font-weight: 600; color: var(--field); }
 .btn-service {
     display: inline-flex; align-items: center; min-height: 48px; padding: 0 1.25rem;
-    background: var(--sky-2); color: var(--ink); font-weight: 650; border-radius: 0;
+    background: var(--blush-2); color: var(--ink); font-weight: 650; border-radius: 0;
     transition: background-color var(--t-fast) var(--ease-out);
 }
 .btn-service:hover { background: var(--ink); color: #fff; transform: none; }
@@ -127,7 +127,7 @@
 /* --- Cierre: el objeto vuelve sobre su cielo --- */
 .category-cta {
     position: relative;
-    background: #CCE0F0; /* el cielo exacto de la foto 17 */
+    background: #F2E1E5; /* rosa vino pastel */
     color: var(--ink);
     padding: clamp(96px, 11vw, 160px) 0;
     overflow: hidden;
@@ -143,8 +143,8 @@
 .category-cta .cta-content { grid-column: 6 / -1; }
 .category-cta .cta-content h2 { font-size: var(--t-l); color: var(--ink); margin-bottom: 1rem; }
 .category-cta .cta-content p { font-size: 18px; color: var(--ink); margin-bottom: 1.75rem; max-width: 40ch; }
-.category-cta .btn-primary { background: var(--sun); color: var(--on-sun); }
-.category-cta .btn-primary:hover { background: var(--sun-hover); }
+.category-cta .btn-primary { background: var(--gold); color: var(--on-gold); }
+.category-cta .btn-primary:hover { background: var(--gold-hover); }
 
 .text-highlight, .text-accent { color: inherit; background: none; -webkit-text-fill-color: currentColor; }
 

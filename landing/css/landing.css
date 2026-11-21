@@ -13,12 +13,12 @@
 }
 
 :root {
-    --sea-day: #12476E; --sunset: #9E2A5E; --night: #0C2238;
-    --field: var(--sea-day); --field-2: #1B5784;
-    --on-field: #FFFFFF; --on-field-soft: #D8E6F2;
-    --foam: #F5F8FB; --sky: #CFDFEE; --sky-2: #E3EDF6; --rose: #E6C9C7;
-    --ink: #0F2E4C; --muted: #3B5670;
-    --sun: #F6A65B; --sun-hover: #F8B675; --on-sun: #0F2E4C;
+    --wine-day: #94485E; --wine-dusk: #7C3149; --wine-night: #4B1D2C;
+    --field: var(--wine-day); --field-2: #A65A70;
+    --on-field: #FFFFFF; --on-field-soft: #F6E3E8;
+    --cream-white: #FCF8F6; --blush: #F2E1E5; --blush-2: #F8EDEF; --rose: #E6C9C7;
+    --ink: #3F1724; --muted: #6E4552;
+    --gold: #D6B56E; --gold-hover: #E0C487; --on-gold: #3F1724;
     --font: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
     --t-xl: clamp(40px, 5vw, 84px); --t-l: clamp(30px, 3.4vw, 54px); --t-m: clamp(20px, 1.6vw, 24px);
     --m: clamp(16px, 2.4vw, 32px);
@@ -26,8 +26,8 @@
     --head-h: 72px;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
-html[data-luz="atardecer"] { --field: var(--sunset); --field-2: #B23A70; --on-field-soft: #F6DCE6; }
-html[data-luz="noche"] { --field: var(--night); --field-2: #173451; --on-field-soft: #CBDAE8; }
+html[data-luz="atardecer"] { --field: var(--wine-dusk); --field-2: #8E3D56; --on-field-soft: #F6E3E8; }
+html[data-luz="noche"] { --field: var(--wine-night); --field-2: #5E2A3B; --on-field-soft: #F1DDE3; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--head-h) + 12px); -webkit-text-size-adjust: 100%; }
@@ -36,7 +36,7 @@ body {
     font-size: 17px;
     line-height: 1.55;
     color: var(--ink);
-    background: var(--foam);
+    background: var(--cream-white);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -45,8 +45,8 @@ ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; }
 h1, h2, h3 { font-family: var(--font); font-weight: 700; letter-spacing: -0.02em; line-height: 1.04; text-wrap: balance; font-stretch: 92%; }
 p { text-wrap: pretty; }
-::selection { background: var(--sun); color: var(--on-sun); }
-:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+::selection { background: var(--gold); color: var(--on-gold); }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .container { width: 100%; padding: 0 var(--m); }
 
 /* --- Barra --- */
@@ -57,21 +57,21 @@ p { text-wrap: pretty; }
 }
 .header-content { height: var(--head-h); display: flex; align-items: center; gap: 1.5rem; }
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo img { width: 40px; height: 40px; }
-.logo::after { content: "Afrodita"; font-size: 22px; font-weight: 750; letter-spacing: -0.02em; font-stretch: 90%; }
+.logo img { width: 54px; height: 54px; object-fit: contain; }
+.logo::after { content: "Florería Afrodita"; font-size: 22px; font-weight: 750; letter-spacing: -0.02em; font-stretch: 90%; }
 .nav { display: flex; gap: 1.75rem; margin-left: auto; }
 .nav-link {
     display: inline-flex; align-items: center; min-height: 44px; font-weight: 550;
     text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 2px; text-underline-offset: 8px;
     transition: text-decoration-color 160ms var(--ease-out);
 }
-.nav-link:hover { text-decoration-color: var(--sun); }
+.nav-link:hover { text-decoration-color: var(--gold); }
 .cta-btn {
     min-height: 44px; padding: 0 1.1rem; border: 0; border-radius: 0; cursor: pointer;
-    font: inherit; font-weight: 650; background: var(--sun); color: var(--on-sun);
+    font: inherit; font-weight: 650; background: var(--gold); color: var(--on-gold);
     transition: background-color 160ms var(--ease-out), transform 160ms;
 }
-.cta-btn:hover { background: var(--sun-hover); }
+.cta-btn:hover { background: var(--gold-hover); }
 .cta-btn:active { transform: scale(0.97); }
 
 /* --- Hero: el ramo frente al mar, grande y cortado por el borde --- */
@@ -106,20 +106,20 @@ p { text-wrap: pretty; }
     display: inline-flex; align-items: center; justify-content: center; gap: 10px;
     min-height: 56px; padding: 0 1.75rem; border: 0; border-radius: 0; cursor: pointer;
     font: inherit; font-size: 18px; font-weight: 650;
-    background: var(--sun); color: var(--on-sun);
+    background: var(--gold); color: var(--on-gold);
     transition: background-color 160ms var(--ease-out), transform 160ms;
 }
-.hero-cta:hover { background: var(--sun-hover); }
+.hero-cta:hover { background: var(--gold-hover); }
 .hero-cta:active { transform: scale(0.97); }
 
 /* --- Búsqueda y filtros --- */
-.catalog-filters { background: var(--foam); padding: clamp(40px, 5vw, 72px) 0 12px; }
+.catalog-filters { background: var(--cream-white); padding: clamp(40px, 5vw, 72px) 0 12px; }
 .catalog-filters .container { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
 .search-container { position: relative; flex: 1 1 300px; max-width: 440px; }
 .search-input {
     width: 100%; min-height: 52px; padding: 0 48px 0 46px;
     font: inherit; font-size: 17px; color: var(--ink);
-    background: var(--sky-2); border: 2px solid transparent; border-radius: 0; outline: none;
+    background: var(--blush-2); border: 2px solid transparent; border-radius: 0; outline: none;
     -webkit-appearance: none; appearance: none;
     transition: border-color 160ms var(--ease-out), background-color 160ms;
 }
@@ -133,10 +133,10 @@ p { text-wrap: pretty; }
 .filter-label { font-size: 14px; color: var(--muted); margin-right: 4px; }
 .filter-btn {
     min-height: 44px; padding: 0 1rem; border: 0; border-radius: 0; cursor: pointer;
-    font: inherit; font-size: 16px; font-weight: 600; color: var(--ink); background: var(--sky-2);
+    font: inherit; font-size: 16px; font-weight: 600; color: var(--ink); background: var(--blush-2);
     transition: background-color 160ms var(--ease-out), color 160ms;
 }
-.filter-btn:hover { background: var(--sky); }
+.filter-btn:hover { background: var(--blush); }
 .filter-btn.active { background: var(--ink); color: #fff; }
 .results-counter { font-size: 14px; color: var(--muted); padding: 6px 0 0; }
 .results-counter strong { color: var(--ink); font-variant-numeric: tabular-nums; }
@@ -152,7 +152,7 @@ p { text-wrap: pretty; }
 }
 .product-item { display: flex; flex-direction: column; background: none; border: 0; border-radius: 0; }
 .product-item:hover { transform: none; }
-.product-image { aspect-ratio: 1 / 1; overflow: hidden; background: var(--sky); }
+.product-image { aspect-ratio: 1 / 1; overflow: hidden; background: var(--blush); }
 .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 600ms var(--ease-out); }
 .product-item:hover .product-image img { transform: scale(1.04); }
 .product-info { padding: 18px 0 0; display: flex; flex-direction: column; flex: 1; }
@@ -164,10 +164,10 @@ p { text-wrap: pretty; }
 .product-footer .btn-order {
     min-height: 48px; padding: 0 1rem; border: 0; border-radius: 0; cursor: pointer;
     font: inherit; font-size: 16px; font-weight: 650; white-space: nowrap;
-    background: var(--sun); color: var(--on-sun);
+    background: var(--gold); color: var(--on-gold);
     transition: background-color 160ms var(--ease-out), transform 160ms;
 }
-.product-footer .btn-order:hover { background: var(--sun-hover); }
+.product-footer .btn-order:hover { background: var(--gold-hover); }
 .product-footer .btn-order:active { transform: scale(0.97); }
 
 /* Carrusel de variantes (si algún producto las tiene) */
@@ -177,12 +177,12 @@ p { text-wrap: pretty; }
 .product-image.has-carousel .carousel-dots { position: absolute; bottom: 10px; left: 0; right: 0; display: flex; justify-content: center; gap: 6px; }
 .product-image.has-carousel .carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.6); }
 .product-image.has-carousel .carousel-dot.active { background: #fff; }
-.product-image.has-carousel .carousel-counter { position: absolute; top: 10px; right: 10px; background: var(--foam); padding: 2px 8px; font-size: 14px; }
+.product-image.has-carousel .carousel-counter { position: absolute; top: 10px; right: 10px; background: var(--cream-white); padding: 2px 8px; font-size: 14px; }
 
 /* --- Cierre: el objeto vuelve sobre su cielo --- */
 .final-cta, .cta-final-section {
     position: relative;
-    background: #CDE1EC; /* el cielo exacto de la foto 13 */
+    background: #F2E1E5; /* rosa vino pastel */
     color: var(--ink);
     padding: clamp(96px, 11vw, 160px) 0;
     overflow: hidden;
@@ -200,10 +200,10 @@ p { text-wrap: pretty; }
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 60px; padding: 0 1.75rem; border: 0; border-radius: 0; cursor: pointer;
     font: inherit; font-size: 19px; font-weight: 650; font-variant-numeric: tabular-nums;
-    background: var(--sun); color: var(--on-sun);
+    background: var(--gold); color: var(--on-gold);
     transition: background-color 160ms var(--ease-out), transform 160ms;
 }
-.cta-button-large:hover { background: var(--sun-hover); }
+.cta-button-large:hover { background: var(--gold-hover); }
 .cta-button-large:active { transform: scale(0.97); }
 .final-cta .cta-subtitle { margin-top: 1rem; margin-bottom: 0; font-size: 16px; color: var(--ink); }
 
@@ -212,7 +212,7 @@ p { text-wrap: pretty; }
 .footer-info { display: grid; gap: 6px; margin-bottom: 24px; }
 .footer-info p:first-child { font-size: var(--t-m); font-weight: 700; letter-spacing: -0.015em; }
 .footer-info a { font-weight: 650; text-decoration: underline; text-underline-offset: 4px; font-variant-numeric: tabular-nums; }
-.footer-info a:hover { color: var(--sun); }
+.footer-info a:hover { color: var(--gold); }
 .footer-copyright { font-size: 14px; color: var(--on-field-soft); }
 
 /* --- Entradas (las agrega landing.js) --- */
@@ -229,7 +229,9 @@ p { text-wrap: pretty; }
     .final-cta .container { padding-left: var(--m); }
 }
 @media (max-width: 600px) {
-    .logo::after { font-size: 19px; }
+    .logo::after { display: none; }
+    .cta-btn { white-space: nowrap; }
+    .logo img { width: 44px; height: 44px; }
     .cta-btn { font-size: 15px; padding: 0 0.8rem; }
     .hero h1 { font-size: clamp(26px, 7.4vw, 34px); }
     .hero-cta, .cta-button-large { width: 100%; }

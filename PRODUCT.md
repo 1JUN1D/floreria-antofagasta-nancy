@@ -29,7 +29,7 @@ Local físico en Carlos Condell 2526, local 1, Antofagasta, atendiendo las 24 ho
 - Horario: 24 horas (confirmado por el usuario). Corte de entrega el mismo día: no confirmado.
 
 ## Brand Commitments
-- Nombre: Florería Afrodita. No hay logo ni colores de marca obligatorios (el usuario delegó la identidad).
+- Nombre: Florería Afrodita. No hay logo; colores de marca: vino tinto pastel y dorado (pedido del usuario, nov 2026).
 - El video assets/wallpaper.mp4 se conserva en el inicio (el usuario quiere conservarlo o reajustarlo).
 - Variante de idioma: español de Chile, CLP.
 
