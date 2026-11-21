@@ -309,7 +309,7 @@ html { scrollbar-color: var(--muted) var(--blush-2); }
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 38% 40%;
+    object-position: 50% 40%;
     transform: scale(1.04);
     animation: afrodita-drift 18s ease-in-out infinite alternate;
 }
