@@ -43,7 +43,7 @@
 - Florería mayorista para eventos y empresas
 
 ## Catálogo
-- 23 arreglos con precio publicado en CLP (códigos 001 a 023), de $15.000 a $87.500
+- 23 arreglos con precio publicado en CLP (códigos 001 a 023), de $18.750 a $87.500
 - Línea fúnebre: códigos 018 a 023
 - 57 peluches con precio (códigos P01 a P59), de $8.000 a $70.000
 - Filtros: ramos, rosas, girasoles, fúnebres, premium y rangos de precio (hasta $30.000, $30.000 - $80.000, más de $80.000)
