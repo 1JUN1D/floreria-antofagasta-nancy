@@ -13,7 +13,7 @@ Personas en Antofagasta (Chile) que necesitan regalar flores hoy o mandar condol
 Sitio de Florería Afrodita (Antofagasta): mostrar el catálogo real con precios en CLP y convertir la visita en un pedido por WhatsApp o una llamada. Éxito = el visitante elige un arreglo y abre WhatsApp con el producto ya escrito en el mensaje.
 
 ## Positioning
-Local físico en Carlos Condell 2526, local 1, Antofagasta, atendiendo las 24 horas, con un catálogo propio de 23 arreglos fotografiados (ramos, regalos y línea fúnebre) y precio publicado en cada uno.
+Local físico en Carlos Condell 2526, local 1, Antofagasta, atendiendo las 24 horas, con un catálogo propio de 31 arreglos fotografiados (ramos, regalos y línea fúnebre) y precio publicado en cada uno.
 
 ## Operating Context
 - Pedido por WhatsApp y teléfono: +56 9 5016 3949 (el mismo número para ambos).
@@ -25,7 +25,7 @@ Local físico en Carlos Condell 2526, local 1, Antofagasta, atendiendo las 24 ho
 - HTML/CSS/JS estático; componentes (navbar, footer, contacto, zonas) se cargan por fetch desde /components.
 - La estructura semántica de las páginas es inmutable por decisión del usuario: no se cambian etiquetas, jerarquía de títulos, secciones, URLs, schema ni etiquetas de Google Ads. El rediseño trabaja sobre estilos, datos y contenido del negocio.
 - Alcance del rediseño (nov 2026): index.html, catalogo.html, las 5 páginas hub de categoría (tienda de regalos, entrega de flores, flores secas, canastas de regalos, florería mayorista) y la carpeta /landing. Las 20 páginas de servicio solo reciben los datos del negocio.
-- Precios: los 23 productos con su precio base +25% (pedido del usuario). Sin campaña de descuento activa: no se muestra precio tachado ni contador.
+- Precios: los 31 productos con su precio base +25% (pedido del usuario). Sin campaña de descuento activa: no se muestra precio tachado ni contador.
 - Horario: 24 horas (confirmado por el usuario). Corte de entrega el mismo día: no confirmado.
 
 ## Brand Commitments
@@ -34,7 +34,7 @@ Local físico en Carlos Condell 2526, local 1, Antofagasta, atendiendo las 24 ho
 - Variante de idioma: español de Chile, CLP.
 
 ## Evidence on Hand
-- 23 fotos de producto propias (assets/1–23): 1–17 ramos y regalos sobre fondo celeste, 18–23 arreglos fúnebres sobre fondo rosado.
+- 31 fotos de producto propias (assets/1–31): 1–17 ramos y regalos sobre fondo celeste, 18–23 arreglos fúnebres sobre fondo rosado, 24–28 ramos de rosas grandes y 29–31 ramos de graduación sobre fondo rosado.
 - 12 fotos de clientes recibiendo arreglos (assets/cliente1–12.webp) heredadas del sitio anterior: no confirmado que sean de Afrodita.
 - Video assets/wallpaper.mp4.
 - NO existen: logo, reseñas de Google de Afrodita, cifras de clientes, años del negocio, fotos del local. El schema anterior traía un aggregateRating 4,9/127 de otra florería: no es de Afrodita y no se usa.
